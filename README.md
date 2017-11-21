@@ -19,6 +19,7 @@ Add filter configuration in your web.xml :
         <filter-name>WaitFilter</filter-name>
         <filter-class>net.arnulfo.waitfilter.WaitFilter</filter-class>
         <init-param>
+            <!-- Time to sleep in millisecond -->
             <param-name>WaitTime</param-name>
             <param-value>5000</param-value>
         </init-param>
@@ -28,10 +29,9 @@ Add filter configuration in your web.xml :
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 ```
-
 ## Bonus: Change waitTime in live with JMX
 
-The wait time can be change in live with JMX.
+The wait time can be changed while your web app is running with JMX.
 Use a JMX Browser like VisualVM (need MBeans plugin), JConsole or JMC.
 
 ![Screenshot of JConsole](jconsole.png)
