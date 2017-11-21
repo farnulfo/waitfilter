@@ -33,3 +33,5 @@ Add filter configuration in your web.xml :
 
 The wait time can be change in live with JMX.
 Use a JMX Browser like VisualVM (need MBeans plugin), JConsole or JMC.
+
+![Screenshot of JConsole](jconsole.png)
